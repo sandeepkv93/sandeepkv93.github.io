@@ -1,0 +1,358 @@
+{
+  "username": "sandeepkv93",
+  "avatar_url": "https://avatars.githubusercontent.com/u/3814925?u=f5be3011038eb98ff1ffe1e97ffc016f25e53fdf&v=4",
+  "updated_date": "2026-11-22",
+  "metrics": {
+    "contributions_yr": 614,
+    "commits_yr": 426,
+    "public_repos": 83,
+    "pull_requests": 41,
+    "total_stars": 15,
+    "followers": 24,
+    "years_exp": "11+ yrs"
+  },
+  "top_langs": [
+    {
+      "name": "Go",
+      "count": 25,
+      "pct": 37.9,
+      "color": "#00ADD8"
+    },
+    {
+      "name": "Java",
+      "count": 17,
+      "pct": 25.7,
+      "color": "#b07219"
+    },
+    {
+      "name": "Python",
+      "count": 13,
+      "pct": 19.7,
+      "color": "#3572A5"
+    },
+    {
+      "name": "TypeScript",
+      "count": 6,
+      "pct": 9.1,
+      "color": "#3178c6"
+    },
+    {
+      "name": "JavaScript",
+      "count": 5,
+      "pct": 7.6,
+      "color": "#f1e05a"
+    }
+  ],
+  "projects": [
+    {
+      "name": "everything-backend-starter-kit",
+      "title": "everything-backend-starter-kit",
+      "url": "https://github.com/sandeepkv93/everything-backend-starter-kit",
+      "demo": "",
+      "summary": "Production-ready Go backend starter kit with secure auth and RBAC APIs, Redis rate limiting and abuse controls, observability, and Kubernetes deployment tooling.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 3,
+      "pushed_at": "2026-02-19",
+      "pinned": true,
+      "categories": [
+        "pinned",
+        "cloud",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "RBAC",
+        "Redis",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "distributed-systems-visualizer",
+      "title": "distributed-systems-visualizer",
+      "url": "https://github.com/sandeepkv93/distributed-systems-visualizer",
+      "demo": "https://sandeepkv93.github.io/distributed-systems-visualizer/",
+      "summary": "Interactive visual simulations for learning distributed systems algorithms with step-by-step playback controls and in-page theory guides.",
+      "language": "TypeScript",
+      "language_color": "#3178c6",
+      "stars": 0,
+      "pushed_at": "2026-11-22",
+      "pinned": true,
+      "categories": [
+        "pinned",
+        "distributed",
+        "web",
+        "demo"
+      ],
+      "tags": [
+        "TypeScript",
+        "Distributed Systems",
+        "Interactive"
+      ]
+    },
+    {
+      "name": "go-observability-demo",
+      "title": "go-observability-demo",
+      "url": "https://github.com/sandeepkv93/go-observability-demo",
+      "demo": "",
+      "summary": "Side-by-side comparison of Go observability stacks across metrics, traces, and logs, contrasting OpenTelemetry-first and Prometheus/Promtail pipelines.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 1,
+      "pushed_at": "2026-02-16",
+      "pinned": true,
+      "categories": [
+        "pinned",
+        "cloud",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana"
+      ]
+    },
+    {
+      "name": "concurrency-in-golang",
+      "title": "concurrency-in-golang",
+      "url": "https://github.com/sandeepkv93/concurrency-in-golang",
+      "demo": "",
+      "summary": "Structured collection of Go concurrency patterns, synchronization primitives, worker pools, and practical experiments for mastering parallel execution.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 1,
+      "pushed_at": "2025-07-06",
+      "pinned": true,
+      "categories": [
+        "pinned",
+        "distributed",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "Concurrency",
+        "Patterns"
+      ]
+    },
+    {
+      "name": "oauth-from-scratch-in-go",
+      "title": "oauth-from-scratch-in-go",
+      "url": "https://github.com/sandeepkv93/oauth-from-scratch-in-go",
+      "demo": "",
+      "summary": "RFC-compliant OAuth 2.0 authorization server and OpenID Connect provider implemented from scratch in Go with PKCE, token rotation, and security hardening.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 0,
+      "pushed_at": "2026-02-16",
+      "pinned": true,
+      "categories": [
+        "pinned",
+        "cloud",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "OAuth 2.0",
+        "OIDC",
+        "Security"
+      ]
+    },
+    {
+      "name": "k8s-distributed-cron-jobs",
+      "title": "k8s-distributed-cron-jobs",
+      "url": "https://github.com/sandeepkv93/k8s-distributed-cron-jobs",
+      "demo": "",
+      "summary": "Distributed task processing system built on Kubernetes Jobs, CronJobs, and Redis work queues with authentication, monitoring, and workflow recovery.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 0,
+      "pushed_at": "2025-07-20",
+      "pinned": true,
+      "categories": [
+        "pinned",
+        "distributed",
+        "cloud",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "Kubernetes",
+        "Redis",
+        "Scheduling"
+      ]
+    },
+    {
+      "name": "podbeacon",
+      "title": "podbeacon",
+      "url": "https://github.com/sandeepkv93/podbeacon",
+      "demo": "",
+      "summary": "Kubernetes operator that automatically injects and configures OpenTelemetry Collector sidecars on annotated pods.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 0,
+      "pushed_at": "2026-09-19",
+      "pinned": false,
+      "categories": [
+        "cloud",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "Kubernetes Operator",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "name": "raft-consensus",
+      "title": "raft-consensus",
+      "url": "https://github.com/sandeepkv93/raft-consensus",
+      "demo": "",
+      "summary": "Raft distributed consensus implemented from scratch in Go with leader election, log replication, snapshotting, and a linearizable KV store.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 0,
+      "pushed_at": "2026-09-18",
+      "pinned": false,
+      "categories": [
+        "distributed",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "Raft",
+        "Consensus",
+        "KV Store"
+      ]
+    },
+    {
+      "name": "otelviz",
+      "title": "otelviz",
+      "url": "https://github.com/sandeepkv93/otelviz",
+      "demo": "",
+      "summary": "Interactive Streamlit application for validating, simulating, and visualizing OpenTelemetry Collector receiver, processor, and exporter pipelines.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0,
+      "pushed_at": "2025-06-08",
+      "pinned": false,
+      "categories": [
+        "cloud",
+        "web"
+      ],
+      "tags": [
+        "Python",
+        "Streamlit",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "name": "retry-budget-validator",
+      "title": "retry-budget-validator",
+      "url": "https://github.com/sandeepkv93/retry-budget-validator",
+      "demo": "",
+      "summary": "TypeScript library and CLI that statically analyzes declarative retry topologies to catch retry storms and exhaustion budgets before production.",
+      "language": "TypeScript",
+      "language_color": "#3178c6",
+      "stars": 0,
+      "pushed_at": "2026-10-03",
+      "pinned": false,
+      "categories": [
+        "distributed",
+        "web"
+      ],
+      "tags": [
+        "TypeScript",
+        "Reliability",
+        "CLI"
+      ]
+    },
+    {
+      "name": "googlysync",
+      "title": "googlysync",
+      "url": "https://github.com/sandeepkv93/googlysync",
+      "demo": "",
+      "summary": "Linux desktop client for Google Drive combining a Go sync daemon, GTK4 native interface, and FUSE file streaming built with Bazel.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 0,
+      "pushed_at": "2026-03-19",
+      "pinned": false,
+      "categories": [
+        "cloud",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "Bazel",
+        "GTK4",
+        "FUSE"
+      ]
+    },
+    {
+      "name": "lps",
+      "title": "lps (Load Pattern Simulator)",
+      "url": "https://github.com/sandeepkv93/lps",
+      "demo": "",
+      "summary": "Typed Python HTTP traffic generator and load experiment runner backed by DuckDB analytics storage and Streamlit reporting.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0,
+      "pushed_at": "2025-12-27",
+      "pinned": false,
+      "categories": [
+        "distributed",
+        "web"
+      ],
+      "tags": [
+        "Python",
+        "DuckDB",
+        "Load Testing"
+      ]
+    },
+    {
+      "name": "go-saga-lab",
+      "title": "go-saga-lab",
+      "url": "https://github.com/sandeepkv93/go-saga-lab",
+      "demo": "",
+      "summary": "Saga lifecycle orchestration in Go featuring explicit state transitions, PostgreSQL persistence with SQL migrations, and a durable outbox dispatcher.",
+      "language": "Go",
+      "language_color": "#00ADD8",
+      "stars": 0,
+      "pushed_at": "2026-03-16",
+      "pinned": false,
+      "categories": [
+        "distributed",
+        "go"
+      ],
+      "tags": [
+        "Go",
+        "PostgreSQL",
+        "Saga",
+        "Outbox"
+      ]
+    },
+    {
+      "name": "oidc-flow-demo",
+      "title": "oidc-flow-demo",
+      "url": "https://github.com/sandeepkv93/oidc-flow-demo",
+      "demo": "https://sandeepkv93.github.io/oidc-flow-demo/",
+      "summary": "Interactive step-by-step visual walkthrough of the OpenID Connect authentication flow, tokens, and protocol exchanges.",
+      "language": "JavaScript",
+      "language_color": "#f1e05a",
+      "stars": 1,
+      "pushed_at": "2024-11-12",
+      "pinned": false,
+      "categories": [
+        "cloud",
+        "web",
+        "demo"
+      ],
+      "tags": [
+        "OIDC",
+        "OAuth 2.0",
+        "Interactive"
+      ]
+    }
+  ]
+}
