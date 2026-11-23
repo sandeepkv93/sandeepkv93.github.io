@@ -8,8 +8,8 @@
     username: "sandeepkv93",
     updated_date: "2026-11-22",
     metrics: {
-      contributions_yr: 614,
-      commits_yr: 426,
+      contributions_yr: 615,
+      commits_yr: 427,
       public_repos: 83,
       pull_requests: 41,
       total_stars: 15,
@@ -60,6 +60,62 @@
         applyTheme(next);
       });
     }
+  }
+
+  function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+
+    const sections = navLinks
+      .map(function (link) {
+        const id = link.getAttribute("href").slice(1);
+        const el = document.getElementById(id);
+        return el ? { id: id, link: link, el: el } : null;
+      })
+      .filter(Boolean);
+
+    function setActive(id) {
+      sections.forEach(function (item) {
+        item.link.classList.toggle("is-active", item.id === id);
+      });
+    }
+
+    if ("IntersectionObserver" in window) {
+      const visible = new Map();
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              visible.set(entry.target.id, entry.boundingClientRect.top);
+            } else {
+              visible.delete(entry.target.id);
+            }
+          });
+          if (visible.size) {
+            const topMost = Array.from(visible.entries()).sort(function (a, b) {
+              return Math.abs(a[1]) - Math.abs(b[1]);
+            })[0][0];
+            setActive(topMost);
+          }
+        },
+        { rootMargin: "-22% 0px -58% 0px", threshold: [0, 0.25, 0.5] }
+      );
+      sections.forEach(function (item) {
+        observer.observe(item.el);
+      });
+    }
+
+    window.addEventListener(
+      "scroll",
+      function () {
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 48) {
+          setActive(sections[sections.length - 1].id);
+        } else if (window.scrollY < 120) {
+          setActive("");
+        }
+      },
+      { passive: true }
+    );
   }
 
   function renderTelemetry(data) {
@@ -176,6 +232,19 @@
             '" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>'
           : "";
 
+        const displayTags = (project.tags || []).filter(function (tag) {
+          return tag.toLowerCase() !== String(project.language || "").toLowerCase();
+        });
+        const tagsHtml = displayTags.length
+          ? '<div class="project-tags">' +
+            displayTags
+              .map(function (tag) {
+                return '<span class="project-tag">' + escapeHtml(tag) + "</span>";
+              })
+              .join("") +
+            "</div>"
+          : "";
+
         return (
           '<article class="project-card">' +
           "<div>" +
@@ -192,6 +261,7 @@
           '<p class="project-summary">' +
           escapeHtml(project.summary) +
           "</p>" +
+          tagsHtml +
           "</div>" +
           '<div class="project-footer">' +
           '<div class="project-meta">' +
@@ -236,7 +306,20 @@
     }
   }
 
-  function buildCommandLines(cmd) {
+  function termLink(url, label) {
+    return (
+      '<a class="term-link" href="' +
+      escapeHtml(url) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(label) +
+      "</a>"
+    );
+  }
+
+  function buildCommandLines(rawCmd) {
+    const parts = rawCmd.split(/\s+/);
+    const cmd = parts[0];
+    const arg = parts[1] || "";
     const m = siteData.metrics || FALLBACK_DATA.metrics;
     const langs = (siteData.top_langs || FALLBACK_DATA.top_langs)
       .map(function (l) {
@@ -244,7 +327,31 @@
       })
       .join(", ");
 
+    if (cmd === "theme") {
+      const current = document.documentElement.getAttribute("data-theme") || "dark";
+      if (!arg) {
+        return [
+          'Current theme: <span class="term-accent">' +
+            escapeHtml(current) +
+            '</span> (usage: <span class="term-key">theme dark</span> or <span class="term-key">theme light</span>)',
+        ];
+      }
+      if (arg === "dark" || arg === "light") {
+        localStorage.setItem("sv-theme", arg);
+        applyTheme(arg);
+        return ['Switched theme to <span class="term-green">' + escapeHtml(arg) + "</span>."];
+      }
+      return ['<span class="term-muted">Unknown theme "' + escapeHtml(arg) + '". Use dark or light.</span>'];
+    }
+
     const commands = {
+      whoami: [
+        '<span class="term-accent">Sandeep Vishnu</span> (sandeepkv93)',
+        "Senior Software Engineer @ Snowflake (Streamlit in Snowflake) | Greater Seattle Area",
+      ],
+      ls: [
+        '<span class="term-accent">projects/</span>  experience.md  skills.json  patent.txt  telemetry.live  links.txt',
+      ],
       neofetch: [
         '<span class="term-accent">sandeepkv93@snowflake-data-cloud</span>',
         '<span class="term-muted">-----------------------------------------------</span>',
@@ -268,15 +375,14 @@
         '<span class="term-accent">2019 - 2022</span>     Microsoft Azure | Senior Software Engineer, Spot VMs &amp; Partner Solutions',
         '<span class="term-accent">2015 - 2017</span>     VMware / Digital Fuel | Member of Technical Staff (R&amp;D)',
       ],
-      projects: (siteData.projects || []).slice(0, 8).map(function (p) {
+      projects: (siteData.projects || []).map(function (p) {
+        const demoPart = p.demo ? " " + termLink(p.demo, "[Live Demo]") : "";
         return (
-          '<span class="term-key">' +
-          escapeHtml(p.name) +
-          "</span>  " +
-          '<span class="term-muted">[' +
+          termLink(p.url, p.name) +
+          '  <span class="term-muted">[' +
           escapeHtml(p.language) +
-          "]</span>  " +
-          escapeHtml(p.summary)
+          "]</span>" +
+          demoPart
         );
       }),
       skills: [
@@ -286,10 +392,10 @@
         '<span class="term-key">Data &amp; Async</span>   <span class="term-muted">..</span> PostgreSQL, DuckDB, Redis, RabbitMQ, gRPC / ConnectRPC',
       ],
       patent: [
-        '<span class="term-key">Patent</span>         <span class="term-muted">..</span> US12056521B2 (Microsoft Azure Spot)',
+        '<span class="term-key">Patent</span>         <span class="term-muted">..</span> ' + termLink("https://patents.google.com/patent/US12056521B2/en", "US12056521B2") + " (Microsoft Azure Spot)",
         '<span class="term-key">Title</span>          <span class="term-muted">..</span> Machine-learning-based replenishment of interruptible workloads in cloud environment',
         '<span class="term-key">Impact</span>         <span class="term-muted">..</span> 4x workload runtime, 5x core consumption, 65% to 95% cluster utilization',
-        '<span class="term-key">Publication</span>    <span class="term-muted">..</span> DSAdvisor: Facilitating Deeper Inquiry in the Data Structures Course (IEEE LaTiCE 2016)',
+        '<span class="term-key">Publication</span>    <span class="term-muted">..</span> ' + termLink("https://dblp.org/rec/conf/latice/SandeepASK16", "DSAdvisor (IEEE LaTiCE 2016)"),
       ],
       stats: [
         '<span class="term-key">Contributions</span>  <span class="term-muted">..</span> <span class="term-green">' + escapeHtml(m.contributions_yr) + "</span> (past 12 months)",
@@ -299,14 +405,26 @@
         '<span class="term-key">Top Languages</span>  <span class="term-muted">..</span> ' + escapeHtml(langs),
         '<span class="term-key">Synced</span>         <span class="term-muted">..</span> ' + escapeHtml(siteData.updated_date),
       ],
+      links: [
+        '<span class="term-key">GitHub</span>         <span class="term-muted">..</span> ' + termLink("https://github.com/sandeepkv93", "github.com/sandeepkv93"),
+        '<span class="term-key">LinkedIn</span>       <span class="term-muted">..</span> ' + termLink("https://www.linkedin.com/in/sandeepkv93", "linkedin.com/in/sandeepkv93"),
+        '<span class="term-key">Medium</span>         <span class="term-muted">..</span> ' + termLink("https://medium.com/@sandeepkv93", "medium.com/@sandeepkv93"),
+        '<span class="term-key">US Patent</span>      <span class="term-muted">..</span> ' + termLink("https://patents.google.com/patent/US12056521B2/en", "US12056521B2"),
+        '<span class="term-key">IEEE LaTiCE</span>    <span class="term-muted">..</span> ' + termLink("https://dblp.org/rec/conf/latice/SandeepASK16", "DSAdvisor (2016)"),
+        '<span class="term-key">Repo Catalog</span>   <span class="term-muted">..</span> ' + termLink("https://sandeepkv93.github.io/repo-index/", "sandeepkv93.github.io/repo-index"),
+      ],
       help: [
         "Available commands:",
         '  <span class="term-accent">neofetch</span>    Profile &amp; live telemetry summary',
+        '  <span class="term-accent">whoami</span>      Quick identity summary',
+        '  <span class="term-accent">ls</span>          List workspace sections',
         '  <span class="term-accent">experience</span>  Career timeline (Snowflake, Microsoft Azure, VMware)',
-        '  <span class="term-accent">projects</span>    Flagship systems and open-source builds',
+        '  <span class="term-accent">projects</span>    All 14 flagship repositories with clickable links',
         '  <span class="term-accent">skills</span>      Core languages, cloud, observability, and data stack',
         '  <span class="term-accent">patent</span>      US12056521B2 patent &amp; IEEE publication details',
         '  <span class="term-accent">stats</span>       Live GitHub metrics and top language breakdown',
+        '  <span class="term-accent">links</span>       Clickable profile, publication, and catalog links',
+        '  <span class="term-accent">theme</span>       Switch color mode (theme dark | theme light)',
         '  <span class="term-accent">clear</span>       Clear terminal output',
       ],
     };
@@ -359,7 +477,20 @@
   }
 
   function initTerminal() {
-    const knownCommands = ["neofetch", "experience", "projects", "skills", "patent", "stats", "help", "clear"];
+    const knownCommands = [
+      "neofetch",
+      "whoami",
+      "ls",
+      "experience",
+      "projects",
+      "skills",
+      "patent",
+      "stats",
+      "links",
+      "theme",
+      "help",
+      "clear",
+    ];
     const form = document.getElementById("terminal-form");
     const input = document.getElementById("terminal-input");
 
@@ -433,6 +564,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initTheme();
+    initScrollSpy();
     initProjectControls();
     initTerminal();
     hydrateData();
