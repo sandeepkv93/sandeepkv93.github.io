@@ -1,0 +1,1506 @@
+{
+  "meta": {
+    "username": "sandeepkv93",
+    "updated_date": "2026-11-23",
+    "public_repo_count": 84,
+    "flagship_count": 14,
+    "sources": [
+      {
+        "name": "Portfolio HTML",
+        "url": "https://sandeepkv93.github.io/"
+      },
+      {
+        "name": "GitHub (auto-synced daily)",
+        "url": "https://github.com/sandeepkv93"
+      },
+      {
+        "name": "LinkedIn (curated)",
+        "url": "https://www.linkedin.com/in/sandeepkv93"
+      }
+    ]
+  },
+  "profile": {
+    "source": "LinkedIn (curated)",
+    "source_url": "https://www.linkedin.com/in/sandeepkv93",
+    "full_name": "Sandeep Vishnu",
+    "headline": "Senior Software Engineer at Snowflake | Streamlit in Snowflake (SiS) | Ex-Microsoft Azure & VMware",
+    "location": "Greater Seattle Area, Washington",
+    "summary": "Senior Software Engineer at Snowflake with 10+ years of experience designing and operating cloud-native platforms and distributed systems at scale. Focused on containerized application runtimes, Kubernetes operators, scheduling, observability (OpenTelemetry), reliability, and developer tooling.",
+    "experience": [
+      {
+        "company": "Snowflake",
+        "role": "Senior Software Engineer, Streamlit in Snowflake (SiS)",
+        "period": "2022 - Present",
+        "location": "Bellevue / Greater Seattle Area",
+        "highlights": [
+          "Building a fully managed platform that brings Python application runtimes directly to data inside the Snowflake AI Data Cloud.",
+          "Working across containerized execution on Snowpark Container Services (SPCS), platform scalability, observability, secure integrations, and developer experience."
+        ],
+        "skills": [
+          "Python",
+          "Go",
+          "Kubernetes",
+          "Snowpark Container Services",
+          "Containers",
+          "Distributed Systems",
+          "OpenTelemetry",
+          "Observability",
+          "Streamlit"
+        ]
+      },
+      {
+        "company": "Microsoft Azure",
+        "role": "Senior Software Engineer, Azure Compute & Partner Solutions",
+        "period": "2019 - 2022",
+        "location": "Redmond, WA",
+        "highlights": [
+          "Core contributor to Azure Spot VMs, helping improve cluster utilization from 65% to 95%.",
+          "Led ML-based Spot VM replenishment, achieving 4x workload runtime and 5x core consumption, resulting in granted US Patent US12056521B2.",
+          "Later led the generic Azure Resource Provider hosting platform powering 10+ third-party Azure Partner Solutions including Datadog, Nginx, Elastic, and Confluent."
+        ],
+        "skills": [
+          "Azure",
+          "Distributed Systems",
+          "Capacity Optimization",
+          "Machine Learning",
+          "Resource Providers",
+          "Cloud Infrastructure",
+          "C#",
+          "Go"
+        ]
+      },
+      {
+        "company": "VMware / Digital Fuel",
+        "role": "Member of Technical Staff (R&D)",
+        "period": "2015 - 2017",
+        "location": "Bengaluru, India",
+        "highlights": [
+          "Engineered multi-cloud REST adapters for AWS and Azure cloud financial management infrastructure.",
+          "Built dependency-safe deletion frameworks for vRealize Business Enterprise.",
+          "Led monolith-to-microservice REST architecture transformation."
+        ],
+        "skills": [
+          "Java",
+          "REST APIs",
+          "Microservices",
+          "AWS",
+          "Azure",
+          "Cloud Financial Management"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "Stony Brook University",
+        "degree": "M.S. in Computer Science",
+        "notes": "Graduate systems coursework including custom OS kernel development (SBUnix) and network security."
+      },
+      {
+        "school": "PES University",
+        "degree": "B.E. in Information Technology",
+        "notes": "Undergraduate engineering degree and DSAdvisor research published at IEEE LaTiCE 2016."
+      }
+    ],
+    "patent": {
+      "number": "US12056521B2",
+      "title": "Machine-learning-based replenishment of interruptible workloads in cloud environment",
+      "assignee_context": "Microsoft Azure Spot VMs",
+      "impact": "Delivered 4x workload runtime and 5x core consumption while helping drive Azure Spot cluster utilization from 65% to 95%.",
+      "url": "https://patents.google.com/patent/US12056521B2/en"
+    },
+    "publication": {
+      "title": "DSAdvisor: Facilitating Deeper Inquiry in the Data Structures Course",
+      "venue": "IEEE LaTiCE 2016",
+      "url": "https://dblp.org/rec/conf/latice/SandeepASK16"
+    },
+    "focus_areas": [
+      "Cloud-native platforms and containerized application runtimes (Snowpark Container Services, Kubernetes operators, scheduling, multi-tenant hosting)",
+      "Distributed systems and reliability (Raft consensus, saga orchestration, durable outbox, retry topologies, load simulation)",
+      "Observability at scale (OpenTelemetry pipelines, structured logging, Prometheus, Grafana)",
+      "Developer tools and security (OAuth 2.0 / OIDC internals, CLI/TUI tools, Bazel, AI coding-agent workflows)"
+    ],
+    "links": {
+      "portfolio": "https://sandeepkv93.github.io/",
+      "github": "https://github.com/sandeepkv93",
+      "linkedin": "https://www.linkedin.com/in/sandeepkv93",
+      "medium": "https://medium.com/@sandeepkv93",
+      "patent": "https://patents.google.com/patent/US12056521B2/en",
+      "publication": "https://dblp.org/rec/conf/latice/SandeepASK16",
+      "repo_index": "https://sandeepkv93.github.io/repo-index/"
+    }
+  },
+  "html_sections": {
+    "experience": "Engineering Journey 2015 - Present Snowflake 2022 - Present Senior Software Engineer, Streamlit in Snowflake (SiS) Building a fully managed platform that brings Python application runtimes directly to data inside the Snowflake AI Data Cloud. Focused on containerized execution on Snowpark Container Services, scalability, observability, secure integrations, and developer experience. Microsoft Azure 2019 - 2022 Senior Software Engineer, Azure Compute & Partner Solutions Core contributor to Azure Spot VMs (65% to 95% cluster utilization) and led ML-based Spot replenishment delivering 4x runtime and 5x core consumption ( US12056521B2 ). Later led the generic Resource Provider hosting platform powering 10+ third-party Azure integrations including Datadog, Nginx, Elastic, and Confluent. VMware / Digital Fuel 2015 - 2017 Member of Technical Staff (R&D) Engineered multi-cloud REST adapters for AWS and Azure, dependency-safe deletion frameworks, and led monolith-to-microservice REST architecture transformation on vRealize Business Enterprise. Education Stony Brook University & PES University M.S. in Computer Science , Stony Brook University B.E. in Information Technology , PES University Patent & Publication Applied Cloud Research US Patent: Machine-learning-based replenishment of interruptible workloads in cloud environment (US12056521B2) Publication: DSAdvisor: Facilitating Deeper Inquiry in the Data Structures Course (IEEE LaTiCE 2016)",
+    "overview": "Senior Software Engineer \u00b7 Snowflake \u00b7 Seattle Sandeep Vishnu Building cloud-native application runtimes and reliable distributed systems at scale. On the Streamlit in Snowflake (SiS) platform team, I work on containerized execution on Snowpark Container Services, scalability, observability, and secure integrations. Previously at Microsoft Azure (Azure Spot VMs & Partner Solutions) and VMware . M.S. in Computer Science from Stony Brook University . GitHub LinkedIn Medium Patent US12056521B2 IEEE LaTiCE Repo Catalog Snowflake \u00b7 Streamlit in Snowflake Seattle, WA \u00b7 11+ yrs",
+    "stack": "Core Stack Daily engineering toolkit Languages Go Python Java TypeScript C Cloud & Runtimes Kubernetes & Operators Snowpark Container Services Docker & Linux Bazel Azure & AWS Observability & Data OpenTelemetry Prometheus & Grafana PostgreSQL & DuckDB Redis RabbitMQ Systems & Security Consensus & Sagas gRPC & ConnectRPC OAuth 2.0 & OIDC Retry & Load Simulation Streamlit & React"
+  },
+  "metrics": {
+    "contributions_yr": 595,
+    "commits_yr": 428,
+    "public_repos": 84,
+    "pull_requests": 41,
+    "total_stars": 15,
+    "followers": 24,
+    "years_exp": "11+ yrs"
+  },
+  "top_langs": [
+    {
+      "name": "Go",
+      "count": 25,
+      "pct": 37.9,
+      "color": "#00ADD8"
+    },
+    {
+      "name": "Java",
+      "count": 17,
+      "pct": 25.7,
+      "color": "#b07219"
+    },
+    {
+      "name": "Python",
+      "count": 13,
+      "pct": 19.7,
+      "color": "#3572A5"
+    },
+    {
+      "name": "TypeScript",
+      "count": 6,
+      "pct": 9.1,
+      "color": "#3178c6"
+    },
+    {
+      "name": "JavaScript",
+      "count": 5,
+      "pct": 7.6,
+      "color": "#f1e05a"
+    }
+  ],
+  "repos": [
+    {
+      "name": "sandeepkv93.github.io",
+      "title": "sandeepkv93.github.io",
+      "url": "https://github.com/sandeepkv93/sandeepkv93.github.io",
+      "demo": "",
+      "summary": "Portfolio Website",
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-11-23",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "sandeepkv93",
+      "title": "sandeepkv93",
+      "url": "https://github.com/sandeepkv93/sandeepkv93",
+      "demo": "https://github.com/sandeepkv93",
+      "summary": "Config files for my GitHub profile.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-11-23",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "config",
+        "github-config"
+      ]
+    },
+    {
+      "name": "workout-audio-coach",
+      "title": "workout-audio-coach",
+      "url": "https://github.com/sandeepkv93/workout-audio-coach",
+      "demo": "",
+      "summary": "A Python script that generates an audio file to guide workouts by counting sets and reps with customizable gaps.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-11-22",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "distributed-systems-visualizer",
+      "title": "distributed-systems-visualizer",
+      "url": "https://github.com/sandeepkv93/distributed-systems-visualizer",
+      "demo": "https://sandeepkv93.github.io/distributed-systems-visualizer/",
+      "summary": "Interactive visual simulations for learning distributed systems algorithms with step-by-step playback controls and in-page theory guides.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2026-11-22",
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "TypeScript",
+        "Distributed Systems",
+        "Interactive"
+      ]
+    },
+    {
+      "name": "repo-index",
+      "title": "repo-index",
+      "url": "https://github.com/sandeepkv93/repo-index",
+      "demo": "",
+      "summary": "A comprehensive index of all my GitHub repositories, categorized by programming language and topic",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-11-22",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "retry-budget-validator",
+      "title": "retry-budget-validator",
+      "url": "https://github.com/sandeepkv93/retry-budget-validator",
+      "demo": "",
+      "summary": "TypeScript library and CLI that statically analyzes declarative retry topologies to catch retry storms and exhaustion budgets before production.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2026-10-03",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "TypeScript",
+        "Reliability",
+        "CLI"
+      ]
+    },
+    {
+      "name": "credit-card-validator",
+      "title": "credit-card-validator",
+      "url": "https://github.com/sandeepkv93/credit-card-validator",
+      "demo": "https://sandeepkv93.github.io/credit-card-validator/",
+      "summary": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2026-10-03",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "podbeacon",
+      "title": "podbeacon",
+      "url": "https://github.com/sandeepkv93/podbeacon",
+      "demo": "",
+      "summary": "Kubernetes operator that automatically injects and configures OpenTelemetry Collector sidecars on annotated pods.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-09-19",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "Kubernetes Operator",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "name": "raft-consensus",
+      "title": "raft-consensus",
+      "url": "https://github.com/sandeepkv93/raft-consensus",
+      "demo": "",
+      "summary": "Raft distributed consensus implemented from scratch in Go with leader election, log replication, snapshotting, and a linearizable KV store.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-09-18",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "Raft",
+        "Consensus",
+        "KV Store"
+      ]
+    },
+    {
+      "name": "go-dependent-job-scheduler",
+      "title": "go-dependent-job-scheduler",
+      "url": "https://github.com/sandeepkv93/go-dependent-job-scheduler",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-04-18",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "Dot-Files",
+      "title": "Dot-Files",
+      "url": "https://github.com/sandeepkv93/Dot-Files",
+      "demo": "",
+      "summary": ".vimrc  .bashrc  .tmux.conf files!",
+      "language": "Vim Script",
+      "stars": 1,
+      "pushed_at": "2026-04-18",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "vimrc",
+        "bash",
+        "dotvim",
+        "dotbash",
+        "dotfiles"
+      ]
+    },
+    {
+      "name": "googlysync",
+      "title": "googlysync",
+      "url": "https://github.com/sandeepkv93/googlysync",
+      "demo": "",
+      "summary": "Linux desktop client for Google Drive combining a Go sync daemon, GTK4 native interface, and FUSE file streaming built with Bazel.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-03-19",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "Bazel",
+        "GTK4",
+        "FUSE",
+        "linux-google-drive-client"
+      ]
+    },
+    {
+      "name": "go-saga-lab",
+      "title": "go-saga-lab",
+      "url": "https://github.com/sandeepkv93/go-saga-lab",
+      "demo": "",
+      "summary": "Saga lifecycle orchestration in Go featuring explicit state transitions, PostgreSQL persistence with SQL migrations, and a durable outbox dispatcher.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-03-16",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "PostgreSQL",
+        "Saga",
+        "Outbox"
+      ]
+    },
+    {
+      "name": "rabbitmq-pubsub-workbench",
+      "title": "rabbitmq-pubsub-workbench",
+      "url": "https://github.com/sandeepkv93/rabbitmq-pubsub-workbench",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-03-04",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "rabbitamq-queuecraft",
+      "title": "rabbitamq-queuecraft",
+      "url": "https://github.com/sandeepkv93/rabbitamq-queuecraft",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-03-04",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "everything-backend-starter-kit",
+      "title": "everything-backend-starter-kit",
+      "url": "https://github.com/sandeepkv93/everything-backend-starter-kit",
+      "demo": "",
+      "summary": "Production-ready Go backend starter kit with secure auth and RBAC APIs, Redis rate limiting and abuse controls, observability, and Kubernetes deployment tooling.",
+      "language": "Go",
+      "stars": 3,
+      "pushed_at": "2026-02-19",
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "RBAC",
+        "Redis",
+        "Kubernetes",
+        "docker-compose",
+        "go-chi",
+        "golang",
+        "grafana",
+        "loki",
+        "mimir",
+        "oauth2",
+        "opentelemetry",
+        "rest-api"
+      ]
+    },
+    {
+      "name": "otel-go-logging-showcase",
+      "title": "otel-go-logging-showcase",
+      "url": "https://github.com/sandeepkv93/otel-go-logging-showcase",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-02-17",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "oauth-from-scratch-in-go",
+      "title": "oauth-from-scratch-in-go",
+      "url": "https://github.com/sandeepkv93/oauth-from-scratch-in-go",
+      "demo": "",
+      "summary": "RFC-compliant OAuth 2.0 authorization server and OpenID Connect provider implemented from scratch in Go with PKCE, token rotation, and security hardening.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-02-16",
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "OAuth 2.0",
+        "OIDC",
+        "Security"
+      ]
+    },
+    {
+      "name": "go-observability-demo",
+      "title": "go-observability-demo",
+      "url": "https://github.com/sandeepkv93/go-observability-demo",
+      "demo": "",
+      "summary": "Side-by-side comparison of Go observability stacks across metrics, traces, and logs, contrasting OpenTelemetry-first and Prometheus/Promtail pipelines.",
+      "language": "Go",
+      "stars": 1,
+      "pushed_at": "2026-02-16",
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana",
+        "mimir",
+        "otel-collector",
+        "prome",
+        "prometheus-exporter"
+      ]
+    },
+    {
+      "name": "anonymous-support-backend",
+      "title": "anonymous-support-backend",
+      "url": "https://github.com/sandeepkv93/anonymous-support-backend",
+      "demo": "",
+      "summary": "Production-ready anonymous support platform API with Go, PostgreSQL, MongoDB, Redis, Connect-RPC, and real-time WebSocket support",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2026-01-02",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "connectrpc",
+        "golang",
+        "k8s",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "CowsNBulls",
+      "title": "CowsNBulls",
+      "url": "https://github.com/sandeepkv93/CowsNBulls",
+      "demo": "",
+      "summary": "A modern Android implementation of the classic Bulls & Cows number guessing game, built with Jetpack Compose and Material 3",
+      "language": "Kotlin",
+      "stars": 0,
+      "pushed_at": "2025-12-27",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "lps",
+      "title": "lps (Load Pattern Simulator)",
+      "url": "https://github.com/sandeepkv93/lps",
+      "demo": "",
+      "summary": "Typed Python HTTP traffic generator and load experiment runner backed by DuckDB analytics storage and Streamlit reporting.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2025-12-27",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "Python",
+        "DuckDB",
+        "Load Testing"
+      ]
+    },
+    {
+      "name": "logstream-stack",
+      "title": "logstream-stack",
+      "url": "https://github.com/sandeepkv93/logstream-stack",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-12-22",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "network-programming",
+      "title": "network-programming",
+      "url": "https://github.com/sandeepkv93/network-programming",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-11-14",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "mermaid-to-png",
+      "title": "mermaid-to-png",
+      "url": "https://github.com/sandeepkv93/mermaid-to-png",
+      "demo": "",
+      "summary": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2025-08-03",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "parallel-job-scheduler-with-dependent-jobs",
+      "title": "parallel-job-scheduler-with-dependent-jobs",
+      "url": "https://github.com/sandeepkv93/parallel-job-scheduler-with-dependent-jobs",
+      "demo": "",
+      "summary": "This repository contains a parallel job scheduler implementation that can handle dependent jobs. The scheduler is implemented in Java and uses a thread pool to schedule the jobs in parallel.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2025-07-22",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "countdownlatch",
+        "java",
+        "multithreading",
+        "job-scheduler",
+        "scheduler"
+      ]
+    },
+    {
+      "name": "k8s-distributed-cron-jobs",
+      "title": "k8s-distributed-cron-jobs",
+      "url": "https://github.com/sandeepkv93/k8s-distributed-cron-jobs",
+      "demo": "",
+      "summary": "Distributed task processing system built on Kubernetes Jobs, CronJobs, and Redis work queues with authentication, monitoring, and workflow recovery.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-07-20",
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "Kubernetes",
+        "Redis",
+        "Scheduling"
+      ]
+    },
+    {
+      "name": "k8s-blue-green-webapp",
+      "title": "k8s-blue-green-webapp",
+      "url": "https://github.com/sandeepkv93/k8s-blue-green-webapp",
+      "demo": "",
+      "summary": "A comprehensive implementation of blue-green deployment strategy using Kubernetes Services, Labels, Selectors, and automated traffic switching.",
+      "language": "Shell",
+      "stars": 0,
+      "pushed_at": "2025-07-20",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "blue-green-deployment",
+        "kubernetes"
+      ]
+    },
+    {
+      "name": "kubernetes-autoscale-webapp",
+      "title": "kubernetes-autoscale-webapp",
+      "url": "https://github.com/sandeepkv93/kubernetes-autoscale-webapp",
+      "demo": "",
+      "summary": "A production-ready Kubernetes HPA demo with React frontend, Go backend, PostgreSQL/Redis, auto-scaling from 2-10 pods based on CPU/memory, complete with deployment scripts, load testing, and comprehensive Mermaid architecture diagrams",
+      "language": "Go",
+      "stars": 1,
+      "pushed_at": "2025-07-19",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "url-shortener",
+      "title": "url-shortener",
+      "url": "https://github.com/sandeepkv93/url-shortener",
+      "demo": "",
+      "summary": "A production-grade URL shortener service built with Go and React, featuring comprehensive analytics, QR code generation, and advanced link management capabilities.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-07-15",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "golang",
+        "react",
+        "url-shortener"
+      ]
+    },
+    {
+      "name": "concurrency-in-golang",
+      "title": "concurrency-in-golang",
+      "url": "https://github.com/sandeepkv93/concurrency-in-golang",
+      "demo": "",
+      "summary": "Structured collection of Go concurrency patterns, synchronization primitives, worker pools, and practical experiments for mastering parallel execution.",
+      "language": "Go",
+      "stars": 1,
+      "pushed_at": "2025-07-06",
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "Go",
+        "Concurrency",
+        "Patterns",
+        "golang",
+        "goroutine"
+      ]
+    },
+    {
+      "name": "text2podcast",
+      "title": "text2podcast",
+      "url": "https://github.com/sandeepkv93/text2podcast",
+      "demo": "",
+      "summary": "Convert text scripts to multi-speaker podcasts using AI-powered text-to-speech",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2025-07-05",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "google-auth-app",
+      "title": "google-auth-app",
+      "url": "https://github.com/sandeepkv93/google-auth-app",
+      "demo": "",
+      "summary": "A complete, production-ready demonstration of Google OAuth 2.0 authentication with a React frontend and Go backend, serving as a comprehensive tutorial and reference implementation.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-06-15",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "google-keep-clone",
+      "title": "google-keep-clone",
+      "url": "https://github.com/sandeepkv93/google-keep-clone",
+      "demo": "",
+      "summary": "A production-ready Google Keep clone built with React frontend and Go backend, featuring real-time synchronization, OAuth authentication, and modern UI/UX.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2025-06-09",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "otelviz",
+      "title": "otelviz",
+      "url": "https://github.com/sandeepkv93/otelviz",
+      "demo": "",
+      "summary": "Interactive Streamlit application for validating, simulating, and visualizing OpenTelemetry Collector receiver, processor, and exporter pipelines.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2025-06-08",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "Python",
+        "Streamlit",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "name": "podgen",
+      "title": "podgen",
+      "url": "https://github.com/sandeepkv93/podgen",
+      "demo": "",
+      "summary": "\ud83c\udf99\ufe0f AI-powered command-line tool that converts text scripts into professional podcast audio with multi-provider TTS, music integration, and broadcast-quality mixing",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2025-06-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "bark",
+        "elevenlabs",
+        "ffmpeg",
+        "podcast-generator",
+        "pydub",
+        "python3"
+      ]
+    },
+    {
+      "name": "skypeek",
+      "title": "skypeek",
+      "url": "https://github.com/sandeepkv93/skypeek",
+      "demo": "",
+      "summary": "SkyPeek is a modern Android weather application that delivers real-time weather information through an intuitive Jetpack Compose interface and customizable home screen widgets, offering users seamless access to current conditions, forecasts, and multiple location management with offline support.",
+      "language": "Kotlin",
+      "stars": 0,
+      "pushed_at": "2025-06-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "golang-grpc-client-streaming",
+      "title": "golang-grpc-client-streaming",
+      "url": "https://github.com/sandeepkv93/golang-grpc-client-streaming",
+      "demo": "",
+      "summary": "A Go microservice demo showcasing gRPC client-side streaming for calculating the average of streamed numbers. \ud83d\udcbb   Sources and related content",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-02-24",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "golang",
+        "grpc",
+        "grpc-client",
+        "grpc-client-streaming",
+        "grpc-server"
+      ]
+    },
+    {
+      "name": "golang-grpc-bidirectional-streaming",
+      "title": "golang-grpc-bidirectional-streaming",
+      "url": "https://github.com/sandeepkv93/golang-grpc-bidirectional-streaming",
+      "demo": "",
+      "summary": "A Go microservice demo showcasing gRPC bidirectional streaming for real-time communication.   Sources and related content",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2025-02-20",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "grpc",
+        "grpc-bidirectional-streaming",
+        "grpc-client",
+        "grpc-go",
+        "grpc-server",
+        "protobuf",
+        "protoc"
+      ]
+    },
+    {
+      "name": "springboot-docker-kubernetes-setup",
+      "title": "springboot-docker-kubernetes-setup",
+      "url": "https://github.com/sandeepkv93/springboot-docker-kubernetes-setup",
+      "demo": "",
+      "summary": "A Spring Boot CRUD application showcasing containerization with Docker and orchestration with Kubernetes, featuring MySQL integration and automated local deployment using Kind",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2025-02-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "crud",
+        "k8s",
+        "kind",
+        "mysql",
+        "springboot"
+      ]
+    },
+    {
+      "name": "spring-caffeine-cache-demo",
+      "title": "spring-caffeine-cache-demo",
+      "url": "https://github.com/sandeepkv93/spring-caffeine-cache-demo",
+      "demo": "",
+      "summary": "\ud83d\ude80 Spring Boot application demonstrating high-performance caching with Caffeine, including configuration, monitoring, and practical examples \u26a1",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2025-01-29",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "caching",
+        "spring-cache",
+        "spring-cache-caffeine"
+      ]
+    },
+    {
+      "name": "spring-boot-metrics-dashboard",
+      "title": "spring-boot-metrics-dashboard",
+      "url": "https://github.com/sandeepkv93/spring-boot-metrics-dashboard",
+      "demo": "",
+      "summary": "A Spring Boot application demonstrating metrics collection and visualization using Spring Actuator, Prometheus, and Grafana.",
+      "language": "Java",
+      "stars": 1,
+      "pushed_at": "2025-01-26",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "slf4j-logback-otel-example",
+      "title": "slf4j-logback-otel-example",
+      "url": "https://github.com/sandeepkv93/slf4j-logback-otel-example",
+      "demo": "",
+      "summary": "A Java application demonstrating advanced logging and telemetry practices using SLF4J, Logback, and OpenTelemetry, with structured logging, multiple appenders, and OpenTelemetry collector integration.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2025-01-03",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "user-management-springboot",
+      "title": "user-management-springboot",
+      "url": "https://github.com/sandeepkv93/user-management-springboot",
+      "demo": "",
+      "summary": "A Spring Boot application for user management with OAuth2 social login and AWS S3 integration for profile pictures.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2025-01-02",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "springboot-starter-app",
+      "title": "springboot-starter-app",
+      "url": "https://github.com/sandeepkv93/springboot-starter-app",
+      "demo": "",
+      "summary": "A robust, production-ready Spring Boot starter template featuring comprehensive user authentication, role-based access control (RBAC), and JWT token management.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2025-01-01",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "springboot-openapi-codegen-demo",
+      "title": "springboot-openapi-codegen-demo",
+      "url": "https://github.com/sandeepkv93/springboot-openapi-codegen-demo",
+      "demo": "",
+      "summary": "A demo project showing contract-first API development using Spring Boot 3 and OpenAPI code generation. Build APIs starting from spec to code.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2024-12-29",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "api",
+        "code-generation",
+        "openapi",
+        "springboot",
+        "swagger-codegen"
+      ]
+    },
+    {
+      "name": "distributed-kth-frequent",
+      "title": "distributed-kth-frequent",
+      "url": "https://github.com/sandeepkv93/distributed-kth-frequent",
+      "demo": "",
+      "summary": "A high-performance, distributed system for finding the kth most frequent element in a dataset, built with Java 21 and designed for scalability and reliability.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2024-11-13",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "oidc-flow-demo",
+      "title": "oidc-flow-demo",
+      "url": "https://github.com/sandeepkv93/oidc-flow-demo",
+      "demo": "https://sandeepkv93.github.io/oidc-flow-demo/",
+      "summary": "Interactive step-by-step visual walkthrough of the OpenID Connect authentication flow, tokens, and protocol exchanges.",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2024-11-12",
+      "pinned": false,
+      "flagship": true,
+      "tags": [
+        "OIDC",
+        "OAuth 2.0",
+        "Interactive",
+        "mermaidjs",
+        "oauth2",
+        "react",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "SimpleLoadBalancer",
+      "title": "SimpleLoadBalancer",
+      "url": "https://github.com/sandeepkv93/SimpleLoadBalancer",
+      "demo": "",
+      "summary": "A simple load balancer implementation using Spring Boot, featuring service discovery, health checking, and round-robin load distribution.",
+      "language": "Java",
+      "stars": 1,
+      "pushed_at": "2024-11-03",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "document-analysis",
+      "title": "document-analysis",
+      "url": "https://github.com/sandeepkv93/document-analysis",
+      "demo": "",
+      "summary": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2024-08-25",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "delayed-job-scheduler",
+      "title": "delayed-job-scheduler",
+      "url": "https://github.com/sandeepkv93/delayed-job-scheduler",
+      "demo": "",
+      "summary": "This is a simple implementation of a delayed job scheduler written in Java. The scheduler allows you to schedule jobs with a specific date and time, and will execute the job when the specified time is reached.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2024-04-19",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "java",
+        "java8",
+        "multithreading",
+        "scheduledexecutorservice"
+      ]
+    },
+    {
+      "name": "learn-python",
+      "title": "learn-python",
+      "url": "https://github.com/sandeepkv93/learn-python",
+      "demo": "",
+      "summary": "A collection of Python code examples and notes covering general concepts, type annotations, and advanced topics for learning Python.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2023-12-04",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "threadsafequeue",
+      "title": "threadsafequeue",
+      "url": "https://github.com/sandeepkv93/threadsafequeue",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2023-08-10",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "SpotVM-In-Azure-Using-C-Sharp",
+      "title": "SpotVM-In-Azure-Using-C-Sharp",
+      "url": "https://github.com/sandeepkv93/SpotVM-In-Azure-Using-C-Sharp",
+      "demo": "",
+      "summary": "",
+      "language": "C#",
+      "stars": 0,
+      "pushed_at": "2023-07-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "otel-metrics-simple-flask-app",
+      "title": "otel-metrics-simple-flask-app",
+      "url": "https://github.com/sandeepkv93/otel-metrics-simple-flask-app",
+      "demo": "",
+      "summary": "A simple Flask application integrated with OpenTelemetry for metrics collection, demonstrating how to set up and run both the Flask app and an OpenTelemetry Collector using Docker.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2023-07-05",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "covid19-data-analysis",
+      "title": "covid19-data-analysis",
+      "url": "https://github.com/sandeepkv93/covid19-data-analysis",
+      "demo": "",
+      "summary": "",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "pushed_at": "2023-06-12",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "git-tricks",
+      "title": "git-tricks",
+      "url": "https://github.com/sandeepkv93/git-tricks",
+      "demo": "",
+      "summary": "",
+      "language": "",
+      "stars": 1,
+      "pushed_at": "2023-05-11",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "being-developer",
+      "title": "being-developer",
+      "url": "https://github.com/sandeepkv93/being-developer",
+      "demo": "",
+      "summary": "A hub for software development and computer science, featuring experiments, detailed tutorials, and practical examples across various programming languages. Ideal for learning, sharing, and collaboration. Contributions are welcome! \ud83d\ude80\ud83d\udc69\u200d\ud83d\udcbb\ud83d\udc68\u200d\ud83d\udcbb",
+      "language": "",
+      "stars": 0,
+      "pushed_at": "2023-05-10",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "typescript",
+        "javascript",
+        "nodejs",
+        "postgres",
+        "npm",
+        "asp-net-core",
+        "asynchronous-programming",
+        "cs",
+        "graph-algorithms"
+      ]
+    },
+    {
+      "name": "chatgpt-via-terminal",
+      "title": "chatgpt-via-terminal",
+      "url": "https://github.com/sandeepkv93/chatgpt-via-terminal",
+      "demo": "",
+      "summary": "A command-line interface for ChatGPT, offering tools to ask questions and rephrase text using the OpenAI API.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2023-04-27",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "Graph-Algorithms-In-Java",
+      "title": "Graph-Algorithms-In-Java",
+      "url": "https://github.com/sandeepkv93/Graph-Algorithms-In-Java",
+      "demo": "",
+      "summary": "This repository contains implementations of graph algorithms in Java. The algorithms are implemented in a generic way, so they can be used with any type of graph.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2023-03-30",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "caching-in-go",
+      "title": "caching-in-go",
+      "url": "https://github.com/sandeepkv93/caching-in-go",
+      "demo": "",
+      "summary": "",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2023-01-24",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "consistent-hashing",
+      "title": "consistent-hashing",
+      "url": "https://github.com/sandeepkv93/consistent-hashing",
+      "demo": "",
+      "summary": "Consistent Hashing is a distributed hash table algorithm that allows for more efficient remapping of keys to nodes in a distributed system when nodes are added or removed. This implementation is written in Go and provides a basic implementation of consistent hashing.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2023-01-24",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "consistent-hash-algorithm",
+        "consistent-hashing",
+        "golang"
+      ]
+    },
+    {
+      "name": "go-jwt-example",
+      "title": "go-jwt-example",
+      "url": "https://github.com/sandeepkv93/go-jwt-example",
+      "demo": "",
+      "summary": "Example of JWT for authentication and authorization in a Go (golang) web application.",
+      "language": "Go",
+      "stars": 0,
+      "pushed_at": "2023-01-14",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "gin",
+        "go",
+        "golang",
+        "jwt"
+      ]
+    },
+    {
+      "name": "node-user-auth-starterkit",
+      "title": "node-user-auth-starterkit",
+      "url": "https://github.com/sandeepkv93/node-user-auth-starterkit",
+      "demo": "",
+      "summary": "A complete toolkit for developers aiming to swiftly implement a user authentication system using Node.js, React.js, MongoDB, and Mongoose. It offers secure, efficient login solutions, integrates best practices, and demonstrates the synergy of Node.js for robust server-client setups. Perfect for building secure user interfaces with ease. \ud83d\ude80\ud83d\udd11\ud83d\udcbb",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2023-01-14",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "authentication",
+        "authorization",
+        "expressjs",
+        "jwt-authentication",
+        "middlewares",
+        "mongodb",
+        "nodejs",
+        "routing"
+      ]
+    },
+    {
+      "name": "springbootquickstart",
+      "title": "springbootquickstart",
+      "url": "https://github.com/sandeepkv93/springbootquickstart",
+      "demo": "",
+      "summary": "A quick start guide and explanation of Spring Boot, highlighting its benefits for building standalone, production-grade Spring applications.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2022-11-16",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "rabbitmq-demo-springboot",
+      "title": "rabbitmq-demo-springboot",
+      "url": "https://github.com/sandeepkv93/rabbitmq-demo-springboot",
+      "demo": "",
+      "summary": "A Spring Boot application demonstrating RabbitMQ integration with a producer and consumer setup.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2022-11-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "Java-Data-Structures-Syntax-For-Leetcode",
+      "title": "Java-Data-Structures-Syntax-For-Leetcode",
+      "url": "https://github.com/sandeepkv93/Java-Data-Structures-Syntax-For-Leetcode",
+      "demo": "",
+      "summary": "A quick reference for the time complexities of various data structures in Java, useful for competitive programming and algorithm challenges.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2022-10-12",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "WebAppWithRedisCache",
+      "title": "WebAppWithRedisCache",
+      "url": "https://github.com/sandeepkv93/WebAppWithRedisCache",
+      "demo": "",
+      "summary": "Simple Example of how Redis cache and InMemory Cache can be used in a ASP.NET Core Web API Project",
+      "language": "C#",
+      "stars": 0,
+      "pushed_at": "2022-08-28",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "asp-net-core",
+        "inmemory-cache",
+        "redis-cache",
+        "stackexchange-redis"
+      ]
+    },
+    {
+      "name": "nodejs-udp-server-client",
+      "title": "nodejs-udp-server-client",
+      "url": "https://github.com/sandeepkv93/nodejs-udp-server-client",
+      "demo": "",
+      "summary": "NodeJS Simple UDP Server and Client Example",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2022-04-21",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "react-todolist",
+      "title": "react-todolist",
+      "url": "https://github.com/sandeepkv93/react-todolist",
+      "demo": "",
+      "summary": "A React.js to-do list web application with user authentication via social login, synchronized with a Node.js/Express/MongoDB backend.",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2022-04-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "utility-scripts",
+      "title": "utility-scripts",
+      "url": "https://github.com/sandeepkv93/utility-scripts",
+      "demo": "",
+      "summary": "Programs with various utilities",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2022-03-08",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "CSharp-Design-Patterns",
+      "title": "CSharp-Design-Patterns",
+      "url": "https://github.com/sandeepkv93/CSharp-Design-Patterns",
+      "demo": "",
+      "summary": "",
+      "language": "C#",
+      "stars": 0,
+      "pushed_at": "2020-11-26",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "ds-and-algos-csharp",
+      "title": "ds-and-algos-csharp",
+      "url": "https://github.com/sandeepkv93/ds-and-algos-csharp",
+      "demo": "",
+      "summary": "",
+      "language": "C#",
+      "stars": 0,
+      "pushed_at": "2019-11-08",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "java-multi-threading",
+      "title": "java-multi-threading",
+      "url": "https://github.com/sandeepkv93/java-multi-threading",
+      "demo": "",
+      "summary": "Multithreading in Java",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2019-01-07",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "java",
+        "multithreading",
+        "producer-consumer",
+        "semaphores",
+        "threading",
+        "locks"
+      ]
+    },
+    {
+      "name": "learn-containers",
+      "title": "learn-containers",
+      "url": "https://github.com/sandeepkv93/learn-containers",
+      "demo": "",
+      "summary": "",
+      "language": "",
+      "stars": 0,
+      "pushed_at": "2018-11-18",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "docker-swarm",
+        "kubernetes",
+        "docker",
+        "containers",
+        "containerization"
+      ]
+    },
+    {
+      "name": "CSE-519-Data-Science-Fundamentals",
+      "title": "CSE-519-Data-Science-Fundamentals",
+      "url": "https://github.com/sandeepkv93/CSE-519-Data-Science-Fundamentals",
+      "demo": "",
+      "summary": "",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "pushed_at": "2018-11-03",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "CSE-508-Network-Security-Stonybrook-University",
+      "title": "CSE-508-Network-Security-Stonybrook-University",
+      "url": "https://github.com/sandeepkv93/CSE-508-Network-Security-Stonybrook-University",
+      "demo": "",
+      "summary": "Homework Assignments for the course CSE508 Network Security Fall 2017 in Stony Brook University under Professor Michalis Polychronakis",
+      "language": "C",
+      "stars": 1,
+      "pushed_at": "2018-06-17",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "cse508",
+        "cse508sbu",
+        "sbus",
+        "sbucs",
+        "network-security",
+        "michalis-polychronakis"
+      ]
+    },
+    {
+      "name": "CSE537-Artificial-Intelligence-Stonybrook-University",
+      "title": "CSE537-Artificial-Intelligence-Stonybrook-University",
+      "url": "https://github.com/sandeepkv93/CSE537-Artificial-Intelligence-Stonybrook-University",
+      "demo": "",
+      "summary": "Homework Assignments for CSE 537 - Artificial Intelligence Spring 2018 in Stony Brook University under Prof. Niranjan Balasubramanian",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2018-06-11",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "moving-tiles",
+        "a-star-search",
+        "constraint-satisfaction-problem",
+        "text-classification",
+        "scikitlearn-machine-learning",
+        "mrv-heuristic",
+        "lcv-heuristic",
+        "depth-first-search-backtracking",
+        "niranjan-balasubramanian",
+        "stony-brook"
+      ]
+    },
+    {
+      "name": "sudoku-solver-comparitive-analysis",
+      "title": "sudoku-solver-comparitive-analysis",
+      "url": "https://github.com/sandeepkv93/sudoku-solver-comparitive-analysis",
+      "demo": "",
+      "summary": "A comparative study of different algorithms like depth-first-search with backtracking and AC3, genetic algorithm and dancing links algorithm to solve sudoku problem",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2018-06-08",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "sudoku-solver",
+        "sudoku-puzzle",
+        "sudoku",
+        "dancing-links",
+        "genetic-algorithm",
+        "depth-first-search",
+        "arc-consistency"
+      ]
+    },
+    {
+      "name": "fhiranalytics",
+      "title": "fhiranalytics",
+      "url": "https://github.com/sandeepkv93/fhiranalytics",
+      "demo": "https://sandeepkv93.github.io/fhiranalytics",
+      "summary": "Analytics on FHIR Data",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2018-05-10",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "SBUnix",
+      "title": "SBUnix",
+      "url": "https://github.com/sandeepkv93/SBUnix",
+      "demo": "",
+      "summary": "CSE 506: A custom OS kernel built from scratch. Features multi-level paging, preemptive scheduling, multitasking, TAR file system support, and an interactive shell. Ideal for understanding the intricacies of OS design and kernel development. A practical, hands-on approach for learners and system programmers. \ud83d\udda5\ufe0f\ud83d\udc68\u200d\ud83d\udcbb\ud83d\udee0\ufe0f",
+      "language": "C",
+      "stars": 2,
+      "pushed_at": "2018-01-29",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "osdev",
+        "stony-brook",
+        "mike-ferdman",
+        "cse506",
+        "sbunix"
+      ]
+    },
+    {
+      "name": "MultiQC",
+      "title": "MultiQC",
+      "url": "https://github.com/sandeepkv93/MultiQC",
+      "demo": "",
+      "summary": "A tool to aggregate bioinformatics results across many samples into a single report with interactive plots.",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2017-12-13",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "Git-Usage-Guide",
+      "title": "Git-Usage-Guide",
+      "url": "https://github.com/sandeepkv93/Git-Usage-Guide",
+      "demo": "",
+      "summary": "This Repo has information about doing various things in Git, collected from different sources in Internet. Aim is to provide knowledge about different usages of Git at a single place.",
+      "language": "",
+      "stars": 1,
+      "pushed_at": "2017-11-23",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "Blood-Report-Analyser",
+      "title": "Blood-Report-Analyser",
+      "url": "https://github.com/sandeepkv93/Blood-Report-Analyser",
+      "demo": "",
+      "summary": "An android application which helps a layman to understand the blood reports by capturing image of the report using google\u2019s tesseract optical character recognition library for character recognition.",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2015-11-29",
+      "pinned": false,
+      "flagship": false,
+      "tags": [
+        "blood-report",
+        "android",
+        "tesseract-ocr"
+      ]
+    }
+  ]
+}

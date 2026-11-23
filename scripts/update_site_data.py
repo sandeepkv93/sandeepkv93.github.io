@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 """
-Fetch live GitHub telemetry, language distribution, and flagship repository
-metadata for sandeepkv93.github.io using only the Python standard library.
+Fetch live GitHub telemetry, all owned public repository metadata, parse
+portfolio HTML sections, merge curated LinkedIn data, and generate both
+data/github-stats.json and data/knowledge.json using only Python stdlib.
 """
 from __future__ import annotations
 
 import datetime as dt
 import json
 import os
+import re
 import subprocess
 import urllib.request
 from collections import Counter
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +21,9 @@ USERNAME = "sandeepkv93"
 CAREER_START = dt.date(2015, 7, 1)
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT_DIR / "data" / "github-stats.json"
+KNOWLEDGE_FILE = ROOT_DIR / "data" / "knowledge.json"
+LINKEDIN_FILE = ROOT_DIR / "data" / "linkedin-profile.json"
+INDEX_HTML = ROOT_DIR / "index.html"
 
 GRAPHQL_QUERY = """
 query($login: String!, $cursor: String) {
@@ -39,6 +45,13 @@ query($login: String!, $cursor: String) {
         primaryLanguage {
           name
           color
+        }
+        repositoryTopics(first: 10) {
+          nodes {
+            topic {
+              name
+            }
+          }
         }
       }
     }
@@ -185,6 +198,64 @@ CURATED_PROJECTS: list[dict[str, Any]] = [
 ]
 
 
+class PortfolioSectionParser(HTMLParser):
+    """Extract readable text from key static sections of index.html."""
+
+    TARGET_SECTIONS = {"overview", "experience", "stack"}
+    SKIP_TAGS = {"script", "style", "svg", "button", "input", "form"}
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.active_section: str | None = None
+        self.section_depth = 0
+        self.skip_depth = 0
+        self.sections: dict[str, list[str]] = {k: [] for k in self.TARGET_SECTIONS}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attr_map = dict(attrs)
+        if tag in self.SKIP_TAGS:
+            self.skip_depth += 1
+            return
+        if self.active_section is None and tag == "section":
+            sec_id = attr_map.get("id")
+            if sec_id in self.TARGET_SECTIONS:
+                self.active_section = sec_id
+                self.section_depth = 1
+                return
+        if self.active_section is not None:
+            self.section_depth += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in self.SKIP_TAGS and self.skip_depth > 0:
+            self.skip_depth -= 1
+            return
+        if self.active_section is not None:
+            self.section_depth -= 1
+            if self.section_depth <= 0:
+                self.active_section = None
+                self.section_depth = 0
+
+    def handle_data(self, data: str) -> None:
+        if self.active_section is not None and self.skip_depth == 0:
+            cleaned = re.sub(r"\s+", " ", data).strip()
+            if cleaned:
+                self.sections[self.active_section].append(cleaned)
+
+
+def parse_portfolio_html() -> dict[str, str]:
+    if not INDEX_HTML.exists():
+        return {}
+    parser = PortfolioSectionParser()
+    parser.feed(INDEX_HTML.read_text(encoding="utf-8"))
+    return {sec: " ".join(parts) for sec, parts in parser.sections.items() if parts}
+
+
+def load_linkedin_data() -> dict[str, Any]:
+    if not LINKEDIN_FILE.exists():
+        return {}
+    return json.loads(LINKEDIN_FILE.read_text(encoding="utf-8"))
+
+
 def run_graphql(token: str | None, cursor: str | None) -> dict[str, Any]:
     variables: dict[str, Any] = {"login": USERNAME, "cursor": cursor}
     if token:
@@ -208,7 +279,7 @@ def run_graphql(token: str | None, cursor: str | None) -> dict[str, Any]:
     return json.loads(proc.stdout)
 
 
-def fetch_site_data() -> dict[str, Any]:
+def fetch_site_and_knowledge() -> tuple[dict[str, Any], dict[str, Any]]:
     token = os.environ.get("GH_STATS_TOKEN") or os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     repo_nodes: list[dict[str, Any]] = []
     cursor: str | None = None
@@ -225,6 +296,7 @@ def fetch_site_data() -> dict[str, Any]:
 
     public_repos = [r for r in repo_nodes if not r["isPrivate"]]
     repo_by_name = {r["name"]: r for r in public_repos}
+    curated_by_name = {item["name"]: item for item in CURATED_PROJECTS}
     pinned_names = {n["name"] for n in (user.get("pinnedItems", {}).get("nodes") or []) if n and n.get("name")}
     total_stars = sum(r["stargazerCount"] for r in repo_nodes)
 
@@ -263,7 +335,7 @@ def fetch_site_data() -> dict[str, Any]:
                 }
             )
 
-    projects: list[dict[str, Any]] = []
+    flagship_projects: list[dict[str, Any]] = []
     for item in CURATED_PROJECTS:
         live = repo_by_name.get(item["name"], {})
         pl = live.get("primaryLanguage") or {}
@@ -274,7 +346,7 @@ def fetch_site_data() -> dict[str, Any]:
         is_pinned = item["name"] in pinned_names
         if is_pinned and "pinned" not in categories:
             categories.insert(0, "pinned")
-        projects.append(
+        flagship_projects.append(
             {
                 "name": item["name"],
                 "title": item["title"],
@@ -291,33 +363,95 @@ def fetch_site_data() -> dict[str, Any]:
             }
         )
 
+    all_public_repos: list[dict[str, Any]] = []
+    for r in public_repos:
+        name = r["name"]
+        curated = curated_by_name.get(name)
+        pl = r.get("primaryLanguage") or {}
+        topics = [
+            node["topic"]["name"]
+            for node in (r.get("repositoryTopics", {}).get("nodes") or [])
+            if node and node.get("topic") and node["topic"].get("name")
+        ]
+        summary = (curated["summary"] if curated else (r.get("description") or "")).strip()
+        tags = list(curated["tags"]) if curated else []
+        for topic in topics:
+            if topic.lower() not in {t.lower() for t in tags}:
+                tags.append(topic)
+        demo_url = (curated.get("demo") if curated else "") or (r.get("homepageUrl") or "")
+        all_public_repos.append(
+            {
+                "name": name,
+                "title": curated["title"] if curated else name,
+                "url": f"https://github.com/{USERNAME}/{name}",
+                "demo": demo_url,
+                "summary": summary,
+                "language": pl.get("name") or "",
+                "stars": r.get("stargazerCount", 0),
+                "pushed_at": (r.get("pushedAt") or "")[:10],
+                "pinned": name in pinned_names,
+                "flagship": curated is not None,
+                "tags": tags,
+            }
+        )
+
     contrib = user["contributionsCollection"]
     today = dt.date.today()
     years_exp = int((today - CAREER_START).days / 365.25)
 
-    return {
+    metrics = {
+        "contributions_yr": contrib["contributionCalendar"]["totalContributions"],
+        "commits_yr": contrib["totalCommitContributions"],
+        "public_repos": len(public_repos),
+        "pull_requests": user["pullRequests"]["totalCount"],
+        "total_stars": total_stars,
+        "followers": user["followers"]["totalCount"],
+        "years_exp": f"{years_exp}+ yrs",
+    }
+
+    site_payload = {
         "username": USERNAME,
         "avatar_url": user.get("avatarUrl") or f"https://github.com/{USERNAME}.png",
         "updated_date": today.strftime("%Y-%m-%d"),
-        "metrics": {
-            "contributions_yr": contrib["contributionCalendar"]["totalContributions"],
-            "commits_yr": contrib["totalCommitContributions"],
-            "public_repos": len(public_repos),
-            "pull_requests": user["pullRequests"]["totalCount"],
-            "total_stars": total_stars,
-            "followers": user["followers"]["totalCount"],
-            "years_exp": f"{years_exp}+ yrs",
-        },
+        "metrics": metrics,
         "top_langs": top_langs,
-        "projects": projects,
+        "projects": flagship_projects,
     }
+
+    linkedin = load_linkedin_data()
+    html_sections = parse_portfolio_html()
+
+    knowledge_payload = {
+        "meta": {
+            "username": USERNAME,
+            "updated_date": today.strftime("%Y-%m-%d"),
+            "public_repo_count": len(all_public_repos),
+            "flagship_count": len(flagship_projects),
+            "sources": [
+                {"name": "Portfolio HTML", "url": "https://sandeepkv93.github.io/"},
+                {"name": "GitHub (auto-synced daily)", "url": f"https://github.com/{USERNAME}"},
+                {"name": "LinkedIn (curated)", "url": linkedin.get("source_url", "https://www.linkedin.com/in/sandeepkv93")},
+            ],
+        },
+        "profile": linkedin,
+        "html_sections": html_sections,
+        "metrics": metrics,
+        "top_langs": top_langs,
+        "repos": all_public_repos,
+    }
+
+    return site_payload, knowledge_payload
 
 
 def main() -> None:
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    payload = fetch_site_data()
-    DATA_FILE.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote live site telemetry to {DATA_FILE} ({len(payload['projects'])} projects)")
+    site_payload, knowledge_payload = fetch_site_and_knowledge()
+    DATA_FILE.write_text(json.dumps(site_payload, indent=2) + "\n", encoding="utf-8")
+    KNOWLEDGE_FILE.write_text(json.dumps(knowledge_payload, indent=2) + "\n", encoding="utf-8")
+    print(
+        f"Wrote {DATA_FILE.name} ({len(site_payload['projects'])} flagship) and "
+        f"{KNOWLEDGE_FILE.name} ({len(knowledge_payload['repos'])} public repos)"
+    )
 
 
 if __name__ == "__main__":

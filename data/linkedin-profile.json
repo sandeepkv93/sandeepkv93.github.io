@@ -1,0 +1,84 @@
+{
+  "source": "LinkedIn (curated)",
+  "source_url": "https://www.linkedin.com/in/sandeepkv93",
+  "full_name": "Sandeep Vishnu",
+  "headline": "Senior Software Engineer at Snowflake | Streamlit in Snowflake (SiS) | Ex-Microsoft Azure & VMware",
+  "location": "Greater Seattle Area, Washington",
+  "summary": "Senior Software Engineer at Snowflake with 10+ years of experience designing and operating cloud-native platforms and distributed systems at scale. Focused on containerized application runtimes, Kubernetes operators, scheduling, observability (OpenTelemetry), reliability, and developer tooling.",
+  "experience": [
+    {
+      "company": "Snowflake",
+      "role": "Senior Software Engineer, Streamlit in Snowflake (SiS)",
+      "period": "2022 - Present",
+      "location": "Bellevue / Greater Seattle Area",
+      "highlights": [
+        "Building a fully managed platform that brings Python application runtimes directly to data inside the Snowflake AI Data Cloud.",
+        "Working across containerized execution on Snowpark Container Services (SPCS), platform scalability, observability, secure integrations, and developer experience."
+      ],
+      "skills": ["Python", "Go", "Kubernetes", "Snowpark Container Services", "Containers", "Distributed Systems", "OpenTelemetry", "Observability", "Streamlit"]
+    },
+    {
+      "company": "Microsoft Azure",
+      "role": "Senior Software Engineer, Azure Compute & Partner Solutions",
+      "period": "2019 - 2022",
+      "location": "Redmond, WA",
+      "highlights": [
+        "Core contributor to Azure Spot VMs, helping improve cluster utilization from 65% to 95%.",
+        "Led ML-based Spot VM replenishment, achieving 4x workload runtime and 5x core consumption, resulting in granted US Patent US12056521B2.",
+        "Later led the generic Azure Resource Provider hosting platform powering 10+ third-party Azure Partner Solutions including Datadog, Nginx, Elastic, and Confluent."
+      ],
+      "skills": ["Azure", "Distributed Systems", "Capacity Optimization", "Machine Learning", "Resource Providers", "Cloud Infrastructure", "C#", "Go"]
+    },
+    {
+      "company": "VMware / Digital Fuel",
+      "role": "Member of Technical Staff (R&D)",
+      "period": "2015 - 2017",
+      "location": "Bengaluru, India",
+      "highlights": [
+        "Engineered multi-cloud REST adapters for AWS and Azure cloud financial management infrastructure.",
+        "Built dependency-safe deletion frameworks for vRealize Business Enterprise.",
+        "Led monolith-to-microservice REST architecture transformation."
+      ],
+      "skills": ["Java", "REST APIs", "Microservices", "AWS", "Azure", "Cloud Financial Management"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Stony Brook University",
+      "degree": "M.S. in Computer Science",
+      "notes": "Graduate systems coursework including custom OS kernel development (SBUnix) and network security."
+    },
+    {
+      "school": "PES University",
+      "degree": "B.E. in Information Technology",
+      "notes": "Undergraduate engineering degree and DSAdvisor research published at IEEE LaTiCE 2016."
+    }
+  ],
+  "patent": {
+    "number": "US12056521B2",
+    "title": "Machine-learning-based replenishment of interruptible workloads in cloud environment",
+    "assignee_context": "Microsoft Azure Spot VMs",
+    "impact": "Delivered 4x workload runtime and 5x core consumption while helping drive Azure Spot cluster utilization from 65% to 95%.",
+    "url": "https://patents.google.com/patent/US12056521B2/en"
+  },
+  "publication": {
+    "title": "DSAdvisor: Facilitating Deeper Inquiry in the Data Structures Course",
+    "venue": "IEEE LaTiCE 2016",
+    "url": "https://dblp.org/rec/conf/latice/SandeepASK16"
+  },
+  "focus_areas": [
+    "Cloud-native platforms and containerized application runtimes (Snowpark Container Services, Kubernetes operators, scheduling, multi-tenant hosting)",
+    "Distributed systems and reliability (Raft consensus, saga orchestration, durable outbox, retry topologies, load simulation)",
+    "Observability at scale (OpenTelemetry pipelines, structured logging, Prometheus, Grafana)",
+    "Developer tools and security (OAuth 2.0 / OIDC internals, CLI/TUI tools, Bazel, AI coding-agent workflows)"
+  ],
+  "links": {
+    "portfolio": "https://sandeepkv93.github.io/",
+    "github": "https://github.com/sandeepkv93",
+    "linkedin": "https://www.linkedin.com/in/sandeepkv93",
+    "medium": "https://medium.com/@sandeepkv93",
+    "patent": "https://patents.google.com/patent/US12056521B2/en",
+    "publication": "https://dblp.org/rec/conf/latice/SandeepASK16",
+    "repo_index": "https://sandeepkv93.github.io/repo-index/"
+  }
+}

@@ -36,6 +36,7 @@
 
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#telemetry">Telemetry</a>
+        <a href="#ask">Ask AI</a>
         <a href="#experience">Experience</a>
         <a href="#terminal">Terminal</a>
         <a href="#projects">Projects</a>
@@ -182,6 +183,56 @@
             <div class="lang-bar" id="lang-bar" role="img" aria-label="Language distribution bar"></div>
             <ul class="lang-legend" id="lang-legend"></ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ask About Sandeep (ChatGPT-Style Grounded Assistant) -->
+    <section id="ask" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Ask About Sandeep</h2>
+          <span class="section-meta">Grounded strictly in Portfolio, GitHub &amp; LinkedIn</span>
+        </div>
+
+        <div class="chat-shell">
+          <div class="chat-topbar">
+            <div class="chat-topbar-left">
+              <span class="chat-topbar-title">Portfolio Assistant</span>
+              <span class="chat-topbar-meta" id="chat-kb-meta">Indexed GitHub repos + Portfolio HTML + curated LinkedIn</span>
+            </div>
+            <button id="chat-clear" class="chat-clear-btn" type="button">New chat</button>
+          </div>
+
+          <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-label="Conversation history"></div>
+
+          <div class="chat-starters" role="group" aria-label="Suggested questions">
+            <button class="chat-starter-btn" type="button" data-prompt="What does Sandeep work on at Snowflake?">What does Sandeep work on at Snowflake?</button>
+            <button class="chat-starter-btn" type="button" data-prompt="Tell me about his Azure Spot VM patent">Tell me about his Azure Spot VM patent</button>
+            <button class="chat-starter-btn" type="button" data-prompt="Show his Kubernetes and OpenTelemetry repos">Kubernetes &amp; OpenTelemetry repos</button>
+            <button class="chat-starter-btn" type="button" data-prompt="What are his live interactive demos?">Live interactive demos</button>
+            <button class="chat-starter-btn" type="button" data-prompt="Has he built anything with RabbitMQ or PostgreSQL?">RabbitMQ &amp; PostgreSQL repos</button>
+          </div>
+
+          <form id="chat-form" class="chat-composer" autocomplete="off">
+            <textarea
+              id="chat-input"
+              class="chat-input"
+              rows="1"
+              placeholder="Ask anything about Sandeep's experience, repos, patent, or tech stack..."
+              aria-label="Ask a question about Sandeep Vishnu"
+            ></textarea>
+            <button id="chat-send" class="chat-send-btn" type="submit" aria-label="Send question" title="Send question">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+
+          <p class="chat-footnote">
+            Strictly scoped to sandeepkv93.github.io HTML, auto-synced public GitHub repos, and curated LinkedIn profile. Every answer includes source citations.
+          </p>
         </div>
       </div>
     </section>
@@ -434,5 +485,6 @@
   </footer>
 
   <script src="./app.js" defer></script>
+  <script src="./chat.js" defer></script>
 </body>
 </html>
