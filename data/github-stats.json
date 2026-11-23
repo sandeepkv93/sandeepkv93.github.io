@@ -3,11 +3,11 @@
   "avatar_url": "https://avatars.githubusercontent.com/u/3814925?u=f5be3011038eb98ff1ffe1e97ffc016f25e53fdf&v=4",
   "updated_date": "2026-11-23",
   "metrics": {
-    "contributions_yr": 596,
-    "commits_yr": 429,
-    "public_repos": 84,
+    "contributions_yr": 606,
+    "commits_yr": 439,
+    "public_repos": 82,
     "pull_requests": 41,
-    "total_stars": 15,
+    "total_stars": 14,
     "followers": 24,
     "years_exp": "11+ yrs"
   },
@@ -31,16 +31,16 @@
       "color": "#3572A5"
     },
     {
-      "name": "TypeScript",
+      "name": "JavaScript",
       "count": 6,
       "pct": 9.1,
-      "color": "#3178c6"
+      "color": "#f1e05a"
     },
     {
-      "name": "JavaScript",
+      "name": "TypeScript",
       "count": 5,
       "pct": 7.6,
-      "color": "#f1e05a"
+      "color": "#3178c6"
     }
   ],
   "projects": [
@@ -76,7 +76,7 @@
       "language": "TypeScript",
       "language_color": "#3178c6",
       "stars": 0,
-      "pushed_at": "2026-11-22",
+      "pushed_at": "2026-11-23",
       "pinned": true,
       "categories": [
         "pinned",

@@ -2,7 +2,7 @@
   "meta": {
     "username": "sandeepkv93",
     "updated_date": "2026-11-23",
-    "public_repo_count": 84,
+    "public_repo_count": 82,
     "flagship_count": 14,
     "sources": [
       {
@@ -131,15 +131,15 @@
   },
   "html_sections": {
     "overview": "Senior Software Engineer \u00b7 Snowflake \u00b7 Seattle Sandeep Vishnu Building cloud-native application runtimes and reliable distributed systems at scale. On the Streamlit in Snowflake (SiS) platform team, I work on containerized execution on Snowpark Container Services, scalability, observability, and secure integrations. Previously at Microsoft Azure (Azure Spot VMs & Partner Solutions) and VMware . M.S. in Computer Science from Stony Brook University . GitHub LinkedIn Medium Patent US12056521B2 IEEE LaTiCE Repo Catalog Snowflake \u00b7 Streamlit in Snowflake Seattle, WA \u00b7 11+ yrs",
-    "experience": "Engineering Journey 2015 - Present Snowflake 2022 - Present Senior Software Engineer, Streamlit in Snowflake (SiS) Building a fully managed platform that brings Python application runtimes directly to data inside the Snowflake AI Data Cloud. Focused on containerized execution on Snowpark Container Services, scalability, observability, secure integrations, and developer experience. Microsoft Azure 2019 - 2022 Senior Software Engineer, Azure Compute & Partner Solutions Core contributor to Azure Spot VMs (65% to 95% cluster utilization) and led ML-based Spot replenishment delivering 4x runtime and 5x core consumption ( US12056521B2 ). Later led the generic Resource Provider hosting platform powering 10+ third-party Azure integrations including Datadog, Nginx, Elastic, and Confluent. VMware / Digital Fuel 2015 - 2017 Member of Technical Staff (R&D) Engineered multi-cloud REST adapters for AWS and Azure, dependency-safe deletion frameworks, and led monolith-to-microservice REST architecture transformation on vRealize Business Enterprise. Education Stony Brook University & PES University M.S. in Computer Science , Stony Brook University B.E. in Information Technology , PES University Patent & Publication Applied Cloud Research US Patent: Machine-learning-based replenishment of interruptible workloads in cloud environment (US12056521B2) Publication: DSAdvisor: Facilitating Deeper Inquiry in the Data Structures Course (IEEE LaTiCE 2016)",
-    "stack": "Core Stack Daily engineering toolkit Languages Go Python Java TypeScript C Cloud & Runtimes Kubernetes & Operators Snowpark Container Services Docker & Linux Bazel Azure & AWS Observability & Data OpenTelemetry Prometheus & Grafana PostgreSQL & DuckDB Redis RabbitMQ Systems & Security Consensus & Sagas gRPC & ConnectRPC OAuth 2.0 & OIDC Retry & Load Simulation Streamlit & React"
+    "stack": "Core Stack Daily engineering toolkit Languages Go Python Java TypeScript C Cloud & Runtimes Kubernetes & Operators Snowpark Container Services Docker & Linux Bazel Azure & AWS Observability & Data OpenTelemetry Prometheus & Grafana PostgreSQL & DuckDB Redis RabbitMQ Systems & Security Consensus & Sagas gRPC & ConnectRPC OAuth 2.0 & OIDC Retry & Load Simulation Streamlit & React",
+    "experience": "Engineering Journey 2015 - Present Snowflake 2022 - Present Senior Software Engineer, Streamlit in Snowflake (SiS) Building a fully managed platform that brings Python application runtimes directly to data inside the Snowflake AI Data Cloud. Focused on containerized execution on Snowpark Container Services, scalability, observability, secure integrations, and developer experience. Microsoft Azure 2019 - 2022 Senior Software Engineer, Azure Compute & Partner Solutions Core contributor to Azure Spot VMs (65% to 95% cluster utilization) and led ML-based Spot replenishment delivering 4x runtime and 5x core consumption ( US12056521B2 ). Later led the generic Resource Provider hosting platform powering 10+ third-party Azure integrations including Datadog, Nginx, Elastic, and Confluent. VMware / Digital Fuel 2015 - 2017 Member of Technical Staff (R&D) Engineered multi-cloud REST adapters for AWS and Azure, dependency-safe deletion frameworks, and led monolith-to-microservice REST architecture transformation on vRealize Business Enterprise. Education Stony Brook University & PES University M.S. in Computer Science , Stony Brook University B.E. in Information Technology , PES University Patent & Publication Applied Cloud Research US Patent: Machine-learning-based replenishment of interruptible workloads in cloud environment (US12056521B2) Publication: DSAdvisor: Facilitating Deeper Inquiry in the Data Structures Course (IEEE LaTiCE 2016)"
   },
   "metrics": {
-    "contributions_yr": 596,
-    "commits_yr": 429,
-    "public_repos": 84,
+    "contributions_yr": 606,
+    "commits_yr": 439,
+    "public_repos": 82,
     "pull_requests": 41,
-    "total_stars": 15,
+    "total_stars": 14,
     "followers": 24,
     "years_exp": "11+ yrs"
   },
@@ -163,31 +163,35 @@
       "color": "#3572A5"
     },
     {
-      "name": "TypeScript",
+      "name": "JavaScript",
       "count": 6,
       "pct": 9.1,
-      "color": "#3178c6"
+      "color": "#f1e05a"
     },
     {
-      "name": "JavaScript",
+      "name": "TypeScript",
       "count": 5,
       "pct": 7.6,
-      "color": "#f1e05a"
+      "color": "#3178c6"
     }
   ],
   "repos": [
     {
-      "name": "sandeepkv93.github.io",
-      "title": "sandeepkv93.github.io",
-      "url": "https://github.com/sandeepkv93/sandeepkv93.github.io",
-      "demo": "",
-      "summary": "Portfolio Website",
-      "language": "HTML",
+      "name": "distributed-systems-visualizer",
+      "title": "distributed-systems-visualizer",
+      "url": "https://github.com/sandeepkv93/distributed-systems-visualizer",
+      "demo": "https://sandeepkv93.github.io/distributed-systems-visualizer/",
+      "summary": "Interactive visual simulations for learning distributed systems algorithms with step-by-step playback controls and in-page theory guides.",
+      "language": "TypeScript",
       "stars": 0,
       "pushed_at": "2026-11-23",
-      "pinned": false,
-      "flagship": false,
-      "tags": []
+      "pinned": true,
+      "flagship": true,
+      "tags": [
+        "TypeScript",
+        "Distributed Systems",
+        "Interactive"
+      ]
     },
     {
       "name": "sandeepkv93",
@@ -206,41 +210,37 @@
       ]
     },
     {
-      "name": "workout-audio-coach",
-      "title": "workout-audio-coach",
-      "url": "https://github.com/sandeepkv93/workout-audio-coach",
-      "demo": "",
-      "summary": "A Python script that generates an audio file to guide workouts by counting sets and reps with customizable gaps.",
-      "language": "Python",
-      "stars": 0,
-      "pushed_at": "2026-11-22",
-      "pinned": false,
-      "flagship": false,
-      "tags": []
-    },
-    {
-      "name": "distributed-systems-visualizer",
-      "title": "distributed-systems-visualizer",
-      "url": "https://github.com/sandeepkv93/distributed-systems-visualizer",
-      "demo": "https://sandeepkv93.github.io/distributed-systems-visualizer/",
-      "summary": "Interactive visual simulations for learning distributed systems algorithms with step-by-step playback controls and in-page theory guides.",
-      "language": "TypeScript",
-      "stars": 0,
-      "pushed_at": "2026-11-22",
-      "pinned": true,
-      "flagship": true,
-      "tags": [
-        "TypeScript",
-        "Distributed Systems",
-        "Interactive"
-      ]
-    },
-    {
       "name": "repo-index",
       "title": "repo-index",
       "url": "https://github.com/sandeepkv93/repo-index",
       "demo": "",
       "summary": "A comprehensive index of all my GitHub repositories, categorized by programming language and topic",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-11-23",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "sandeepkv93.github.io",
+      "title": "sandeepkv93.github.io",
+      "url": "https://github.com/sandeepkv93/sandeepkv93.github.io",
+      "demo": "",
+      "summary": "Portfolio Website",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2026-11-23",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
+      "name": "workout-audio-coach",
+      "title": "workout-audio-coach",
+      "url": "https://github.com/sandeepkv93/workout-audio-coach",
+      "demo": "",
+      "summary": "A Python script that generates an audio file to guide workouts by counting sets and reps with customizable gaps.",
       "language": "Python",
       "stars": 0,
       "pushed_at": "2026-11-22",
@@ -699,19 +699,6 @@
       "language": "Go",
       "stars": 0,
       "pushed_at": "2025-06-15",
-      "pinned": false,
-      "flagship": false,
-      "tags": []
-    },
-    {
-      "name": "google-keep-clone",
-      "title": "google-keep-clone",
-      "url": "https://github.com/sandeepkv93/google-keep-clone",
-      "demo": "",
-      "summary": "A production-ready Google Keep clone built with React frontend and Go backend, featuring real-time synchronization, OAuth authentication, and modern UI/UX.",
-      "language": "TypeScript",
-      "stars": 0,
-      "pushed_at": "2025-06-09",
       "pinned": false,
       "flagship": false,
       "tags": []
@@ -1468,19 +1455,6 @@
       "language": "Python",
       "stars": 0,
       "pushed_at": "2017-12-13",
-      "pinned": false,
-      "flagship": false,
-      "tags": []
-    },
-    {
-      "name": "Git-Usage-Guide",
-      "title": "Git-Usage-Guide",
-      "url": "https://github.com/sandeepkv93/Git-Usage-Guide",
-      "demo": "",
-      "summary": "This Repo has information about doing various things in Git, collected from different sources in Internet. Aim is to provide knowledge about different usages of Git at a single place.",
-      "language": "",
-      "stars": 1,
-      "pushed_at": "2017-11-23",
       "pinned": false,
       "flagship": false,
       "tags": []
