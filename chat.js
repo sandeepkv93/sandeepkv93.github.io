@@ -778,21 +778,8 @@
 
     function appendWelcome() {
       messagesEl.innerHTML = "";
-      const repoCount = (knowledge && knowledge.meta && knowledge.meta.public_repo_count) || 83;
-      const synced = (knowledge && knowledge.meta && knowledge.meta.updated_date) || "daily";
       appendAssistantMessage({
-        html:
-          "<p>Ask me anything about Sandeep's background, engineering experience, patent, skills, or projects.</p>" +
-          "<p>Every answer is strictly grounded in this <strong>portfolio page</strong>, <strong>" +
-          escapeHtml(repoCount) +
-          " public GitHub repositories</strong> (synced " +
-          escapeHtml(synced) +
-          "), and his <strong>curated LinkedIn profile</strong> with clickable citations.</p>",
-        citations: [
-          cite("Portfolio HTML", "#overview"),
-          cite("GitHub (" + repoCount + " repos)", "https://github.com/sandeepkv93"),
-          cite("LinkedIn (curated)", "https://www.linkedin.com/in/sandeepkv93")
-        ]
+        html: "<p>Ask me anything about Sandeep's background, engineering experience, patent, skills, or projects.</p>"
       });
     }
 
