@@ -1,7 +1,7 @@
 {
   "meta": {
     "username": "sandeepkv93",
-    "updated_date": "2026-11-26",
+    "updated_date": "2026-11-27",
     "public_repo_count": 82,
     "flagship_count": 14,
     "sources": [
@@ -135,8 +135,8 @@
     "overview": "Senior Software Engineer \u00b7 Snowflake \u00b7 Seattle Sandeep Vishnu Building cloud-native application runtimes and reliable distributed systems at scale. On the Streamlit in Snowflake (SiS) platform team, I work on containerized execution on Snowpark Container Services, scalability, observability, and secure integrations. Previously at Microsoft Azure (Azure Spot VMs & Partner Solutions) and VMware . M.S. in Computer Science from Stony Brook University . GitHub LinkedIn Medium Patent US12056521B2 IEEE LaTiCE Repo Catalog Snowflake \u00b7 Streamlit in Snowflake Seattle, WA \u00b7 11+ yrs"
   },
   "metrics": {
-    "contributions_yr": 645,
-    "commits_yr": 469,
+    "contributions_yr": 688,
+    "commits_yr": 512,
     "public_repos": 82,
     "pull_requests": 41,
     "total_stars": 14,
@@ -177,6 +177,19 @@
   ],
   "repos": [
     {
+      "name": "credit-card-validator",
+      "title": "credit-card-validator",
+      "url": "https://github.com/sandeepkv93/credit-card-validator",
+      "demo": "https://sandeepkv93.github.io/credit-card-validator/",
+      "summary": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2026-11-27",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
+    },
+    {
       "name": "sandeepkv93",
       "title": "sandeepkv93",
       "url": "https://github.com/sandeepkv93/sandeepkv93",
@@ -184,7 +197,7 @@
       "summary": "Config files for my GitHub profile.",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-11-26",
+      "pushed_at": "2026-11-27",
       "pinned": false,
       "flagship": false,
       "tags": [
@@ -200,20 +213,7 @@
       "summary": "A comprehensive index of all my GitHub repositories, categorized by programming language and topic",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-11-26",
-      "pinned": false,
-      "flagship": false,
-      "tags": []
-    },
-    {
-      "name": "sandeepkv93.github.io",
-      "title": "sandeepkv93.github.io",
-      "url": "https://github.com/sandeepkv93/sandeepkv93.github.io",
-      "demo": "",
-      "summary": "Portfolio Website",
-      "language": "JavaScript",
-      "stars": 0,
-      "pushed_at": "2026-11-25",
+      "pushed_at": "2026-11-27",
       "pinned": false,
       "flagship": false,
       "tags": []
@@ -226,7 +226,7 @@
       "summary": "Interactive visual simulations for learning distributed systems algorithms with step-by-step playback controls and in-page theory guides.",
       "language": "TypeScript",
       "stars": 0,
-      "pushed_at": "2026-11-25",
+      "pushed_at": "2026-11-27",
       "pinned": true,
       "flagship": true,
       "tags": [
@@ -234,6 +234,19 @@
         "Distributed Systems",
         "Interactive"
       ]
+    },
+    {
+      "name": "sandeepkv93.github.io",
+      "title": "sandeepkv93.github.io",
+      "url": "https://github.com/sandeepkv93/sandeepkv93.github.io",
+      "demo": "",
+      "summary": "Portfolio Website",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushed_at": "2026-11-26",
+      "pinned": false,
+      "flagship": false,
+      "tags": []
     },
     {
       "name": "workout-audio-coach",
@@ -264,19 +277,6 @@
         "Reliability",
         "CLI"
       ]
-    },
-    {
-      "name": "credit-card-validator",
-      "title": "credit-card-validator",
-      "url": "https://github.com/sandeepkv93/credit-card-validator",
-      "demo": "https://sandeepkv93.github.io/credit-card-validator/",
-      "summary": "",
-      "language": "TypeScript",
-      "stars": 0,
-      "pushed_at": "2026-10-03",
-      "pinned": false,
-      "flagship": false,
-      "tags": []
     },
     {
       "name": "podbeacon",
